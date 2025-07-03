@@ -1,0 +1,814 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+.body {
+    min-height: 90vh;
+    flex: 1;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    min-height: 50px;
+}
+
+.logoName {
+    font-size: 30px;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+.logoNameFooter {
+    color: white;
+    margin: 0;
+}
+
+.navItems {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navItems a {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.navItem {
+    margin-right: 60px;
+    color: black;
+}
+
+.navItem:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.navItem_Work {
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: white !important;
+}
+
+.menuToggle {
+    display: none;
+    cursor: pointer;
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+.burgerIcon {
+    width: 100%;
+}
+
+/* Banner */
+.bannerContainer,
+.banner {
+    width: 100%;
+}
+
+.bannerContainer {
+    background-size: cover;
+}
+
+.banner {
+    object-fit: cover;
+    width: 100%;
+    min-height: 400px;
+}
+
+/* Welcome Section */
+
+.welcomeSection {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.welcomeTextContainer {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.welcomeHeader {
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.welcomeImageContainer {
+    max-width: 300px;
+}
+
+.welcomeImage {
+    width: 100%;
+    border-radius: 200px;
+}
+
+.welcomeBodyText {
+    text-align: left;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.workCTAButton {
+    max-width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white !important;
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.workCTAButton:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 6px 5px rgba(227, 227, 227, 1);
+}
+
+.workPreviewRow {
+    text-align: center;
+    margin: 0 auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Row of Photos */
+.rowImagesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.rowImage {
+    max-width: 30%;
+}
+
+.rowImage:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 11px 10px 5px rgba(227, 227, 227, 1);
+}
+
+.imageLink {
+    display: contents;
+}
+
+.rowButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* About Me Page */
+.aboutMeHeader {
+    font-size: 50px;
+}
+
+.aboutMeContainer {
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutMeTextContainer {
+    max-width: 600px;
+}
+
+.aboutMeTitle {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.experienceAndEdu {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
+
+.experienceTitleContainer {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0 0 0;
+}
+
+.experienceTitle {
+    margin: 15px 0 15px 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.experienceInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+.experienceInfoTitleContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experienceItemList {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.experienceListContainer {
+    text-align: left;
+    font-size: 16px;
+}
+
+.bulletPointIcon {
+    max-width: 20px;
+}
+
+.experienceInfo {
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.experienceInfo_Edu {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.experienceInfoDate {
+    font-size: 15px;
+    margin: 5px 0 2px 0;
+}
+
+.skillsAndSoftwareContainer {
+    display: flex;
+    margin: 40px 0 20px 0;
+    justify-content: space-evenly;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skillsTitleContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.skillsTitle {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+
+.skillsListContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.skillListItem {
+    list-style-type: none;
+    border: solid 1px blue;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.skillsItemsContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-right: 170px;
+}
+
+.skillsList {
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+/* Software */
+
+.softwareContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.softwareIconContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.softwareList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.softwareIcon {
+    max-width: 60px;
+    margin-right: 20px;
+}
+
+/* Contact */
+
+.contactSectionContainer {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 300px;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactTitle {
+    font-size: 50px;
+    margin: 0 0 5px 0;
+}
+
+.contactBlurb {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emailContainer {
+    margin-bottom: 20px;
+}
+
+.linkedinContainer {
+    margin-bottom: 20px;
+}
+
+.contactInfoTitle {
+    margin: 0;
+    font-weight: 500;
+}
+
+.contactInfoTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.contactInfoItem {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contactInfoIcon {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.contactLink {
+    cursor: hover;
+}
+
+/* Work Page */
+
+.cardsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 15px 0 15px 0;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.cardImage {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.cardImage:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 11px 10px 5px rgba(227, 227, 227, 1);
+}
+
+.cardTitleContainer {
+    text-align: center;
+    font-size: 17px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 7px;
+    width: fit-content;
+}
+
+.cardTitleContainer:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cardTitle {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Gallery */
+
+.photoGridContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.photoRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.photoColumn {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.photoInGallery {
+    object-fit: cover;
+    width: 100%;
+}
+
+.photoColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.backButtonContainer {
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    top: 55px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.backButtonIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    margin-left: 28px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.backButtonLink {
+    display: contents;
+}
+
+/* Footer */
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+    background-color: #1c1c1c;
+    padding: 0 10px;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footerLogoContainer {
+    flex: 1;
+}
+
+.copyrightContainer {
+    min-height: inherit;
+    display: flex;
+    align-items: end;
+    margin-bottom: 5px;
+    font-size: 10px;
+    flex: 1;
+}
+
+.copyrightText {
+    margin: 0;
+    padding: 0;
+}
+
+.footerText {
+    margin: 0;
+    padding: 0 0 15px 0;
+    flex: 1;
+}
+
+.footerText:last-child {
+    padding: 0;
+}
+
+.footerDetailsContainer {
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .cardContainer {
+        max-width: 350px;
+    }
+
+    .cardImage {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .welcomeSection {
+        padding: 0 20px;
+    }
+
+    .skillsContainer {
+        display: block;
+    }
+
+    .skillsItemsContainer {
+        max-width: none;
+        margin: 0;
+    }
+
+    .softwareContainer {
+        max-width: none;
+    }
+
+    .softwareIconContainer {
+        margin-top: 40px;
+        flex-direction: row;
+    }
+
+    .skillListItem {
+        font-size: 20px;
+        padding: 5px 20px;
+    }
+
+    .cardContainer {
+        max-width: 300px;
+    }
+
+    .cardImage {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner {
+        object-fit: contain;
+        height: auto;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cardContainer {
+        max-width: 250px;
+    }
+
+    .welcomeHeader {
+        font-size: 50px;
+    }
+
+    .welcomeBodyText {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .experienceAndEdu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skillListItem {
+        font-size: 16px;
+        padding: 2px 5px;
+        margin: 2px 5px;
+    }
+    
+    .softwareIconContainer {
+        flex-direction: column;
+    }
+    
+    .softwareList {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cardsContainer {
+        flex-direction: column;
+    }
+
+    .cardContainer {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cardImage {
+        min-height: 450px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .rowImagesContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .rowImage {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .welcomeImageContainer {
+        max-width: 200px;
+    }
+
+    .welcomeBodyText {
+        margin-right: 10px;
+    }
+    
+    .navItems {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: white;
+    }
+    
+    .navItems a {
+        font-size: 18px;
+    }
+    
+    .navItem {
+        margin: 40px 0;
+    }
+    
+    .navItems.active {
+        display: flex;
+    }
+    
+    .menuToggle {
+        display: flex;
+    }
+    
+    .contactSectionContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    
+    .contactSection, .contactInfoContainer {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .welcomeSection {
+        padding-top: 10px;
+    }
+
+    .navItem {
+        margin-right: 10px;
+    }
+
+    .welcomeSection {
+        flex-direction: column;
+    }
+
+    .welcomeTextContainer {
+        order: 2;
+    }
+
+    .welcomeImageContainer {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .welcomeHeader {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .welcomeBodyText {
+        margin: 0 0 10px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .rowImage {
+        margin-bottom: 10px;
+    }
+
+    .rowButtonContainer {
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .workCTAButton {
+        font-size: 16px;
+    }
+    
+    .workPreviewRow {
+        margin: 0 20px 15px 20px;
+    }
+    
+    .footerText {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gayle Cassar</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="body">
+            <div class="nav">
+                <a href="index.html"><h1 class="logoName">GAYLE</h1></a>
+                <div class="navItems" id="navItemsList">
+                    <a class="navItem active" href="index.html">Home</a>
+                    <a class="navItem" href="about_me.html">About Me</a>
+                    <a class="navItem" href="contact.html">Contact</a>
+                    <a class="navItem navItem_Work" href="work.html">Work</a>
+                </div>
+                <div class="menuToggle">
+                    <img class="burgerIcon" src="Images/BurgerIcon.png" />
+                </div>
+            </div>
+            <div class="bannerContainer">
+                <img src="Images/Typography_Banner.png" alt="Banner placeholder" class="banner" />
+            </div>
+            <div class="contactSectionContainer">
+                <div class="contactSection">
+                    <h1 class="contactTitle">Contact Me</h1>
+                    <p class="contactBlurb">Get in touch with me for any questions or enquiries</p>
+                </div>
+                <div class="contactInfoContainer">
+                    <div class="emailContainer">
+                        <div class="contactInfoTitleContainer">
+                            <img class="contactInfoIcon" src="Images/AdobeStock_505232790.jpeg" />
+                            <p class="contactInfoTitle">Email</p>
+                        </div>
+                        <p class="contactInfoItem">gaylecassar@hotmail.com</p>
+                    </div>
+                    <div class="linkedinContainer">
+                        <div class="contactInfoTitleContainer">
+                            <img class="contactInfoIcon" src="Images/LI-In-Bug.png" />
+                            <p class="contactInfoTitle">LinkedIn</p>
+                        </div>
+                        <p class="contactInfoItem">
+                            <a class="contactLink" target="_blank" href="https://www.linkedin.com/in/gaylecassar/"
+                                >https://www.linkedin.com/in/gaylecassar/</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <div class="copyrightContainer">
+                <p class="copyrightText">Copyright &copy; Gayle Cassar</p>
+            </div>
+            <div class="footerLogoContainer">
+                <a href="index.html"><h1 class="logoName logoNameFooter">GAYLE</h1></a>
+            </div>
+            <div class="footerDetailsContainer">
+                <p class="footerText"><a href="about_me.html">About Me</a></p>
+                <p class="footerText"><a href="contact.html">Contact Me</a></p>
+                <p class="footerText"><a href="work.html">My Work</a></p>
+            </div>
+        </div>
+
+        <!-- Script for burger navigation icon -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const menuToggle = document.querySelector(".menuToggle");
+                const navLinks = document.querySelector(".navItems");
+
+                menuToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+    </body>
+</html>
